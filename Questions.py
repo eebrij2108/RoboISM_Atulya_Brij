@@ -250,7 +250,7 @@ def func20():
     f = list(it.combinations_with_replacement('1379', 2))
     g = list(it.combinations_with_replacement('1379', 1))
     lst =  b + c + d + e + f + g
-    Total = 0
+    Total = 1 #1 because 5 was excluded in taking digits and 5 is a prime number . But for other numbers some rotation having 5 at last is composite. 
     for i in lst:
         num = int("".join(list(i)))
         if prime(num)==True:
